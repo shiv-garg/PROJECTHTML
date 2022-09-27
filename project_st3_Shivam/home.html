@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+<meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>BuyCART</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='home.css'>
+    
+</head>
+<body>
+    <div class="home_navbar" style="background-color: rgb(25, 173, 20);">
+        <div class="home_navbar_logo"  style="cursor: pointer;"   onclick="changeDisplay('home')">
+            <img src="./images/logopic.jpeg" style="width:100%;height:80%;">
+        </div>
+        <div class="home_navbar_right">
+            <div class="home_navbar_search">
+                <form>
+                <i class="fas fa-search fa-1x"></i>
+                <input type="text"  class="home_navbar_search__inner" name="changesearch"
+                id="search_item" placeholder="search" 
+                onkeyup="searchh()" >
+                </form>
+    
+                <div class="product_list" id="product_list">
+                    
+                </div>
+            </div>
+            <div class="home_navbar_cart" style="cursor: pointer;" onclick="changeDisplay('cart')">
+                <img style="height: 2rem;width: 2rem; color: white;" src="./images/cartlogo.svg"> &nbsp Cart
+            </div>
+        </div>
+    </div>
+    <div id="home_body" class="home_sec1_outer">
+        <div class="home_sec1_inner">
+           
+            <div class="home_sec2">
+                
+                <div class="home_sec2_cards">
+
+                    <div class="phones">
+                        HOME DECOR
+                    </div>
+                    <div class="smart_phones" id="decor">
+                        
+                    </div>
+                    <div class="phones">
+                        LAPTOPS
+                    </div>
+                    <div class="smart_phones" id="laptops">
+                        
+                    </div>
+
+                    <div class="phones">
+                        SMART PHONES
+                    </div>
+                    <div class="smart_phones" id="smart_phones">
+                        
+                    </div>
+                    <div class="phones">
+                        FRAGRANCE
+                    </div>
+                    <div class="smart_phones" id="fragrance">
+                        
+                    </div>
+                    <div class="phones">
+                        SKINCARE
+                    </div>
+                    <div class="smart_phones" id="skincare">
+                        
+                    </div>
+                    
+                    <div class="phones">
+                        Groceries
+                    </div>
+                    <div class="smart_phones" id="food">
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cart_body">
+        <div class="cart__body">
+            <div class="cart__inner">
+                <div class="cart__left" id="cart_id">
+                </div>
+                <div class="cart__right">
+                    <div class="cart__heading">
+                        Quantity
+                    </div>
+                    <div class="cart__right__top" id="total_qunat">
+                        
+                    </div>
+                    <div class="cart__heading">
+                        Total Amount
+                    </div>
+                    <div class="cart__right__top" id="total_id">
+                        
+                    </div>
+                    <div class="cart__checkout">
+                        <a href="./form.html" style="text-decoration: none; color: black;">Checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='home.js'></script>
+</body>
+</html>
